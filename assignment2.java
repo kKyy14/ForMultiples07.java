@@ -1,21 +1,20 @@
 import java.util.Scanner;
 
-public class TriangleStar {
+public class assignment2{
     public static void main(String[] args) {
+        
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the value of N: ");
-        int N = sc.nextInt();
-        int i = 0;
+        int n = sc.nextInt();
 
-        while (i <= N) {
-            int j = N;
-            while (j > i) {
+        for (int i = 1; i <= n; i++) {
+            for (int s = 0; s <= n - i; s++) {
                 System.out.print("*");
-                j--;
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print(" ");
             }
             System.out.println();
-            i++;
         }
     }
-    
 }
