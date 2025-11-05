@@ -21,6 +21,8 @@ public class DoWhileLeaveEntitlement {
                 }else {
                     System.out.println( "You dont have enough leave entitlement");
                 }
+            } else if (confirmation.equalsIgnoreCase("t")){
+                break;
             }
         }while(leaveEntitlement > 0);
     } 
